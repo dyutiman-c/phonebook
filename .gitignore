@@ -1,21 +1,39 @@
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
+.DS_Store
 
-ciapp/user_guide_src/build/*
-ciapp/user_guide_src/cilexer/build/*
-ciapp/user_guide_src/cilexer/dist/*
-ciapp/user_guide_src/cilexer/pycilexer.egg-info/*
-ciapp/user_guide
+ciapp/application/cache/*
+!ciapp/application/cache/index.html
 
-#codeigniter 3
 ciapp/application/logs/*
 !ciapp/application/logs/index.html
-!ciapp/application/logs/.htaccess
+
+!ciapp/application/*/.htaccess
+
+ciapp/application/development
+
+composer.lock
+composer.phar
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+ciapp/user_guide
 vendor/
-.vagrant
-.idea
+
 html/
+.vagrant
+
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/

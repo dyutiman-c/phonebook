@@ -50,7 +50,7 @@ Vagrant.configure(2) do |config|
     mysql -uroot -proot -e "CREATE DATABASE phonebook;"
 
     chmod +x /var/www/deployment/install.sh
-    sh /var/www/deployment/install.sh
+    sh /var/www/deployment/install.sh /var/www
 
     echo "\n"
     echo "#################################################################"
