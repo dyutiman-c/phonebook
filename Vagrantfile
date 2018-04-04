@@ -60,7 +60,6 @@ Vagrant.configure(2) do |config|
     echo "================================================================="
     echo "MySQL User: root"
     echo "MySQL Password: root"
-    echo "MySQL Port: 3306"
     echo "MySQL DB: phonebook"
     echo "PhpMyAdmin URL : http://192.168.3.24/phpmyadmin"
     echo "################################################################"
