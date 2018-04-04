@@ -47,10 +47,10 @@ Vagrant.configure(2) do |config|
     sed -i 's:{{db_password}}:root:' /var/www/ciapp/application/config/development/database.php
     sed -i 's:{{db_host}}:localhost:' /var/www/ciapp/application/config/development/database.php
 
-    mysql -e "CREATE DATABASE phonebook;"
+    mysql -uroot -proot -e "CREATE DATABASE phonebook;"
 
-    chmod +x deployment/install.sh
-    sh deployment/install.sh
+    chmod +x /var/www/deployment/install.sh
+    sh /var/www/deployment/install.sh
 
     echo "\n"
     echo "#################################################################"

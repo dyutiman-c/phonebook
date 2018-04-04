@@ -15,4 +15,5 @@ ciapp/user_guide
 ciapp/application/logs/*
 !ciapp/application/logs/index.html
 !ciapp/application/logs/.htaccess
-/vendor/
+vendor/
+.vagrant
