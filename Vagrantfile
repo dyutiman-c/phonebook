@@ -40,11 +40,12 @@ Vagrant.configure(2) do |config|
 
     sudo /etc/init.d/apache2 restart
 
-    #cp /ciapp/application/config/database.php
-    sed -i 's:{{db_name}}:phonebook:' /ciapp/application/config/database.php
-    sed -i 's:{{db_user}}:root:' /ciapp/application/config/database.php
-    sed -i 's:{{db_password}}:root:' /ciapp/application/config/database.php
-    sed -i 's:{{db_host}}:localhost:' /ciapp/application/config/database.php
+    mkdir -p /var/www/ciapp/application/config/development
+    cp /var/www/deployment/database.php /var/www/ciapp/application/config/development/database.php
+    sed -i 's:{{db_name}}:phonebook:' /var/www/ciapp/application/config/development/database.php
+    sed -i 's:{{db_user}}:root:' /var/www/ciapp/application/config/development/database.php
+    sed -i 's:{{db_password}}:root:' /var/www/ciapp/application/config/development/database.php
+    sed -i 's:{{db_host}}:localhost:' /var/www/ciapp/application/config/development/database.php
 
     mysql -e "CREATE DATABASE phonebook;"
 
