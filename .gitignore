@@ -17,3 +17,5 @@ ciapp/application/logs/*
 !ciapp/application/logs/.htaccess
 vendor/
 .vagrant
+.idea
+html/
