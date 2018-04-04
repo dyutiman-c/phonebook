@@ -1,0 +1,10 @@
+{
+  "require": {
+    "php":                                  ">=5.5",
+    "curl/curl":                            "dev-master",
+    "intervention/image":                   "dev-master",
+    "paragonie/random_compat":              "dev-master",
+    "herzult/php-ssh":                      "~1.0",
+    "nette/mail":                           "v2.3.5"
+  }
+}
