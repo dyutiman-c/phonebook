@@ -68,8 +68,8 @@ $CI = get_instance();
         <?php foreach($result as $contact) { ?>
             <tr cid="<?=$contact['id']?>">
                 <td class="created"><?=$contact['created_at']?></td>
-                <td class="name"><?=$contact['name']?></td>
-                <td class="phone"><?=$contact['phone']?></td>
+                <td class="name"><?=stripslashes($contact['name'])?></td>
+                <td class="phone"><?=stripslashes($contact['phone'])?></td>
                 <td class="note"><?=stripslashes(str_replace('\\r\\n','<br/>',$contact['note']))?></td>
                 <td style="text-align:right;">
                     <a class="editcontact" href=""><i class="fas fa-edit"></i> Edit</a> &nbsp; | &nbsp;
