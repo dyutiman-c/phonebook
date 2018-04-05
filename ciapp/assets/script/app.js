@@ -15,7 +15,7 @@ $(document).ready(function() {
             $('#entryForm form').append('<input type="hidden" value="'+ elem.attr('cid') +'" name="cid" class="contactid"/>');
             $('#staticName').val(elem.find('.name').html());
             $('#staticPhone').val(elem.find('.phone').html());
-            $('#staticNote').val(elem.find('.note').html());
+            $('#staticNote').val(elem.find('.note').html().replace('<br>', '\n'));
         }
         $('#entryForm').modal();
     };
