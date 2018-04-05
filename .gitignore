@@ -8,7 +8,7 @@ ciapp/application/logs/*
 
 !ciapp/application/*/.htaccess
 
-ciapp/application/development
+ciapp/application/config/development
 
 composer.lock
 composer.phar

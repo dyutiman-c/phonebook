@@ -5,6 +5,7 @@
  * Date: 4/4/18
  * Time: 8:44 PM
  */
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class MY_Composer
 {
