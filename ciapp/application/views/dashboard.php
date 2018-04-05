@@ -70,7 +70,7 @@ $CI = get_instance();
                 <td class="created"><?=$contact['created_at']?></td>
                 <td class="name"><?=$contact['name']?></td>
                 <td class="phone"><?=$contact['phone']?></td>
-                <td class="note"><?=str_replace('\\r\\n','<br/>',$contact['note'])?></td>
+                <td class="note"><?=stripslashes(str_replace('\\r\\n','<br/>',$contact['note']))?></td>
                 <td style="text-align:right;">
                     <a class="editcontact" href=""><i class="fas fa-edit"></i> Edit</a> &nbsp; | &nbsp;
                     <a class="delcontact" href="/dashboard/cdel/<?=$contact['id']?>"><i class="fas fa-trash-alt"></i> Delete</a>
