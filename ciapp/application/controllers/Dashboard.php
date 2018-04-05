@@ -63,7 +63,7 @@ class Dashboard extends MY_Controller {
     {
         $contact_id = $this->input->post('cid');
         if ($contact_id) {
-           $this->contact->update($this->input->post('name'), array(
+           $this->contact->update($contact_id, array(
                'name'   => $this->input->post('name'),
                'phone'   => $this->input->post('phone'),
                'note'   => $this->input->post('note'),

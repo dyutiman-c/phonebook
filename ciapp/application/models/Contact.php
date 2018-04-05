@@ -14,6 +14,7 @@ class Contact extends CI_Model {
         );
         $result = $query->result_array();
         if(isset($result[0])) {
+            //___debug($result[0]['name']);
             return true;
         }
         return false;
@@ -66,7 +67,7 @@ class Contact extends CI_Model {
 
     public function update($id, $data)
     {
-        if($this>$this->exists($id) == false) {
+        if($this->exists($id) == false) {
             // We can also throw an exception over here
             // instead of adding a new entry
             return $this->add($data);
