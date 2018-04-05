@@ -1,13 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-function ___debug($var)
-{
-    echo '<pre>';
-    print_r($var);
-    exit;
-}
-
 abstract class MY_Controller extends CI_Controller {
 
     protected $authentication = true;

@@ -4,8 +4,8 @@ class Contact extends CI_Model {
 
     public $id;
     public $name;
-    public $username;
-    public $password;
+    public $phone;
+    public $note;
 
     public function exists($id)
     {
