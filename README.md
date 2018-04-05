@@ -3,7 +3,7 @@
 To install a development copy of the application we will need vagrant whichcan be downloade
 from https://www.vagrantup.com/. Once vagrant is installed, run the following commend:
 ```
-git clone git@github.com:dyutiman-c/phonebook.git && \
+git clone https://github.com/dyutiman-c/phonebook.git && \
     vargant up 
 ```
 
