@@ -4,7 +4,7 @@ To install a development copy of the application we will need vagrant whichcan b
 from https://www.vagrantup.com/. Once vagrant is installed, run the following commend:
 ```
 git clone git@github.com:dyutiman-c/phonebook.git && \
-    vargent up 
+    vargant up 
 ```
 
 This will create a virtual machine on your local computer and deploy the application on it.
