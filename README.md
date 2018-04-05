@@ -38,7 +38,7 @@ cd /path/to/my/project/phonebook && \
 # Additional Information.
 Please note the actual codeignitor application is located within the folder "ciapp", and
 the location of this folder should be set as the web root in server configuration. Rest of
-the files and folders should remain outside web-root so that they are no directly accessabele
+the files and folders should remain outside web-root so that they are not directly accessabele
 from any browser.
 
 We have moved the composer setup of codeignitor outside the webroot, so that nither composer.json
